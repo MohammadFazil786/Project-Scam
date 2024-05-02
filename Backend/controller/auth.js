@@ -6,11 +6,7 @@ const nodemailer = require("nodemailer");
 const sendgridTransport = require("nodemailer-sendgrid-transport");
 
 const transporter = nodemailer.createTransport(
-  // sendgridTransport({
-  //   auth: {
-  //     "Enter key here"
-  //   },
-  // })
+  //sengrid Transport Key will come here
 );
 //checking email is present or not
 exports.postCheckEmail = async (req, res, next) => {
