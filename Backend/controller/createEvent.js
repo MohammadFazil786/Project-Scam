@@ -7,8 +7,7 @@ const { translateAliases } = require("../models/createEvent");
 const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
-      api_key:
-        "",
+      "Enter Key Here"
     },
   })
 );
