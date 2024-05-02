@@ -1,0 +1,171 @@
+.container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+.login__container {
+  padding: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 113, 117, 0.5);
+  box-sizing: border-box;
+  height: 40rem;
+  border-radius: 12px;
+}
+
+.login__logo > img {
+  height: 60px;
+  width: 60px;
+  border: #282828 solid;
+  border-radius: 50%;
+}
+
+.login__welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row-gap: 10px;
+}
+
+.login__welcome--text-1 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  /* color: #e21515; */
+}
+
+.login__welcome--text-2 {
+  text-align: center;
+  color: #c2c2c2;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.login__client-error {
+  /* color: var(--primary-color); */
+  display: flex;
+  justify-content: center;
+
+  color: #fff0f1;
+  font-size: 14px;
+  text-align: center;
+  height: 25px;
+  /* background-color: #282828; */
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  align-items: center;
+  /* box-shadow: 2px 2px rgba(0, 0, 0, 0.322); */
+}
+.login__client-no__error {
+  /* color: var(--primary-color); */
+
+  color: #ff5676;
+  font-size: 14px;
+  text-align: center;
+  height: 25px;
+  /* background-color: #282828; */
+  border-radius: 10px;
+  align-items: center;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 20px;
+  width: 350px;
+
+  padding: 5px;
+}
+
+@media screen and (max-width: 350px) {
+  .login__form {
+    width: 100vw;
+  }
+}
+
+.login__form--label {
+  color: rgb(0, 0, 0);
+}
+
+.login__form--input {
+  width: 100%;
+  height: 48px;
+  background-color: #f5f9ff;
+  padding-left: 15px;
+  color: #222222;
+  outline: none;
+  border: 2px solid #eff2f7;
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+.login__form-group,
+.login__form-group--2 {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 5px;
+}
+
+.login__form-group--2 {
+  position: relative;
+}
+
+.login__form--forgot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.login__form-btn {
+  margin-top: 20px;
+  width: 340px;
+  height: 48px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #282828;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* @dezx edited here -| */
+.login__form-btn:disabled,
+.login__form-btn:disabled:hover,
+.login__form-btn:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+/* @dezx /- */
+
+@media screen and (max-width: 350px) {
+  .login__form-btn {
+    width: 95vw;
+  }
+}
+
+.login__no-account {
+  display: flex;
+  grid-column-gap: 4px;
+}
+
+.login__no-account--link {
+  color: #ff5676;
+  text-decoration: none;
+}

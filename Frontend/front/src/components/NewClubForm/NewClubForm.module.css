@@ -1,0 +1,122 @@
+.model_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 15px;
+  width: 100%;
+}
+
+.model_button {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  font-size: 2.2rem;
+  width: 35%;
+  min-width: 430px;
+}
+
+.model_close-button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(204, 204, 204, 0);
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px #0000;
+  margin-bottom: 10px;
+}
+.model_close-button img {
+  /* margin-left: 70px; */
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+/* .model_close-button img:hover {
+  background-color: rgba(204, 204, 204, 0.075);
+} */
+.club_create-heading {
+  padding: 20px;
+  width: 100%;
+  color: white;
+}
+
+.form_container {
+  display: flex;
+}
+
+.form_field {
+  color: rgb(255, 255, 255);
+  align-items: center;
+  display: grid;
+  /* grid-template-row: 2fr 5fr; */
+  margin: 16px auto;
+  background-color: rgba(240, 248, 255, 0);
+  /* height: 3rem; */
+  width: 100%;
+  padding: 5px 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #3f3f3f3f;
+}
+
+.form_field > label {
+  font-size: 1.4rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.form_field > input,
+textarea {
+  border-radius: 3px;
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308); */
+  text-decoration: none;
+  border: 2px solid rgba(204, 204, 204, 0.5);
+  font-size: 1.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+}
+.form_field > input:hover,
+textarea:hover {
+  border: 2px solid rgba(204, 204, 204, 0.856);
+}
+
+.model_submit-button {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.model_submit-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+.create_club-submit_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  padding: 10px;
+  letter-spacing: normal;
+  text-decoration: none;
+}
+.create_club-submit_button > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.384);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  height: 3rem;
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Space Grotesk', sans-serif;
+
+*/
+
+.message_wrapper {
+  padding: 10px;
+  margin: 20px;
+  /* width: 100%; */
+  display: flex;
+}
+.message_right {
+  justify-content: flex-end;
+}
+.message-container {
+  border-radius: 10px;
+  box-sizing: border-box;
+  min-width: 50%;
+  background-color: white;
+  color: black;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.message_title {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+.message_sender {
+  font-weight: 800;
+  font-size: 18px;
+  color: #30336b;
+}
+.message_time {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.message_content {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #130f40;
+}

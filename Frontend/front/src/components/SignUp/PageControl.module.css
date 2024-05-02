@@ -1,0 +1,71 @@
+.btn_container {
+  position: relative;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-around;
+  width: 70%;
+  top: 80%;
+}
+
+.nxt_btn,
+.prev_btn {
+  display: inline-flex;
+  max-width: 220px;
+  min-width: 110px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  font-weight: bolder;
+  border: 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+}
+
+.prev_btn:hover {
+  color: red;
+  background-color: white;
+}
+
+.nxt_btn {
+  background-color: orange;
+}
+.nxt_btn:hover {
+  color: orange;
+  background-color: white;
+}
+
+.suc_btn {
+  display: inline-flex;
+  max-width: 220px;
+  min-width: 220px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(10, 177, 93);
+  border-radius: 10px;
+  font-weight: bolder;
+  border: 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: 0;
+  background-color: #ccc;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.171);
+}
+.suc_btn:hover {
+  color: #ccc;
+  background-color: rgb(10, 177, 93);
+}
+@media screen and (max-width: 1024px) {
+  .btn_container {
+    width: 100%;
+  }
+}
