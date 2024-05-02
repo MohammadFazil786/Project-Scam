@@ -5,11 +5,11 @@ const User = require("../models/auth");
 const ParticipationList = require("../models/EventParticipationList");
 const { translateAliases } = require("../models/createEvent");
 const transporter = nodemailer.createTransport(
-  sendgridTransport({
-    auth: {
-      "Enter Key Here"
-    },
-  })
+  // sendgridTransport({
+  //   auth: {
+  //     "Enter Key Here"
+  //   },
+  // })
 );
 
 exports.postCreateEvent = async (req, res, next) => {
