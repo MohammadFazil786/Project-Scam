@@ -1,0 +1,7 @@
+* Accident Alert System :- 
+
+=> Basically, When we had participated in Smart Indian Hackathon. A problem was given by some organization which asked us to develop some method and also design a prototype to solve the problem of Road Accident. 
+
+=> So we came up with a system Which we named as Accident Alert System which can detect any vechicular accident and convey information regarding location of the incident to nearby hospital, and to family members of the victim. 
+
+=> So basically we fitted any vehicle with some piezoelectric sensors, which will detect the collision by sensing the change in pressure,acceleration, temperature or force. Then that sensor will trigger the arduino device which will also be there in that particular vehicle. we have coded arduino in such a way that it first rings the alarm  for 5-10 seconds, so that if the accident is not so serious and the person is conscious then he or she will switch off the alarm and the further process will get stopped there. Otherwise if the situation is critical that means if the person is not conscious then location of the incident will be sent to the twilio server by our A9g module which has inbuilt gprs and wifi module. Then twilio api will send a request to our nodejs backend Now our backend will first inform about the incident to registered family members using twilio message api, then it will run some machine learning algorithms to determine the nearest and well equipped hospital and call them.
